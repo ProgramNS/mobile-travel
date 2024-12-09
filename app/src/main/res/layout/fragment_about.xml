@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar" />
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sejarah Nila Transport"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.5"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#555555"
+                android:text="Loading..." />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
